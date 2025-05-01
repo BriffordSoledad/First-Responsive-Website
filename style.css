@@ -1,0 +1,534 @@
+/* font-family: "Oswald", sans-serif;
+font-family: "Montserrat", sans-serif; */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    height: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #2E323F;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Fonts */
+.first__hero--header,
+.second__title,
+.third__header,
+.col-2__header,
+.footer__main--header,
+.footer__header {
+    font-family: 'Oswald', sans-serif;
+}
+
+.first__text,
+.col-2__header,
+.col-2__description,
+.footer__main--header,
+.footer__description,
+.footer__links {
+    color: #fff;
+}
+
+.second__title, 
+.third__header,
+.footer__header,
+.footer__subheader {
+    color: #A59678;
+    font-family: 'Oswald', sans-serif;
+}
+
+.first__hero--header {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.2;
+    margin: 0;
+}
+
+span {
+    color: #A59678;
+}
+/* Fonts End Here*/
+
+nav {
+    width: 100%;
+    /* width: fit-content; */
+}
+
+.nav__list {
+    padding: 0;
+}
+
+.nav__header--align {
+    margin-top: .5em;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #fff;
+    color: white;
+    transition: opacity 250ms ease;
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: 0.75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: black;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+/* made changes here from video
+   to make it more accessible.
+   
+   Works the same :) */
+
+.nav__menu {
+    display: flex;
+    justify-content: flex-end;
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    font-size: 1rem;
+    margin-top: 1.25em;
+}
+
+.nav__link {
+    margin: 0;
+    padding: 0;
+    margin-top: .75em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav__link--button {
+    padding: .25em .75em;
+    background: #A59678;
+    border-radius: 100px;
+}
+
+.button {
+    margin-top: 1em;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    opacity: .65;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+.nav--visible {
+    display: flex;
+    flex-direction: column;
+}
+
+/* First Section */
+#first {
+    background-color: #3B4050;
+    padding: 130px 0;
+}
+
+.first__btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #A59678;
+    padding: .5em 1em;
+    border-radius: 100px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.first__wrapper--2 {
+    margin-top: 1.75em;
+}
+
+.first__text {
+    margin-bottom: 1.75em;
+}
+
+/* Second Section */
+#second {
+    background-color: #F1F1F1;
+    padding: 50px 0;
+}
+
+.col {
+    text-align: center;
+}
+
+.third__description--2 {
+    margin-bottom: 3em;
+}
+
+.col-2 {
+    background-color: #2E323F;
+    padding: .75em 1.25em;
+    margin-bottom: 1.25em;
+    text-align: center;
+}
+
+/* Third Section */
+#third {
+    margin-bottom: 2em;
+}
+
+/* .description__third {
+    padding-top: 2.5em;
+} */
+
+/* Footer Section */
+
+footer {
+    background-color: #2E323F;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer__main--header {
+    font-size: 2.25rem;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__link {
+    text-transform: none;
+}
+
+.nav__list-footer {
+    padding: 0;
+}
+
+@media (700px < width < 1000px) {
+    header {
+        padding: 5px 0;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav__menu {
+        visibility: visible;
+        height: auto;
+        position: relative;
+        margin: 0;
+    }
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__item {
+        margin-left: 1.25rem;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Hero Section */
+    .first__hero--header {
+        font-size: 3.625rem;
+    }
+
+    .first__text {
+        font-size: 1.25rem;
+    }
+
+    .first__btn {
+        font-size: 1.25rem;
+        padding: .25em 1.5em;
+    }
+
+    .first__wrapper--1 {
+        width: 50%;
+    }
+
+    .first__wrapper--2 {
+        width: 50%;
+        margin-left: 2em;
+        align-self: flex-end;
+    }
+
+    /* Second Section */
+    /* .col + .col {
+        margin-left: 5em;
+    } */
+
+    #second {
+        margin-bottom: 5em;
+        padding-top: 3em;
+        padding-bottom: 5em;
+    }
+
+    .second-gap {
+        margin: 0 2em;
+    }
+
+    /* Third Section */
+    #third {
+        margin-bottom: 2em;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .col {
+        align-self: flex-start;
+        /* width: 70%; */
+        /* margin: 0 2em; */
+    }
+
+    .row__third {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .third__header {
+        margin-top: 0;
+    }
+
+    .col__third-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .third__description--1, .third__description--2, .third__header {
+        text-align: left;
+    }
+
+    /* Footer Section*/
+    .footer__row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2em;
+    }
+
+    .footer__align {
+        text-align: left;
+    }
+
+    .nav__align--footer {
+        margin: 0;
+    }
+}
+
+@media (width > 1000px) {
+    header {
+        padding: 5px 0;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav__menu {
+        visibility: visible;
+        height: auto;
+        position: relative;
+        margin: 0;
+    }
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__item {
+        margin-left: 1.25rem;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Hero Section */
+    .first__hero--header {
+        font-size: 5.625rem;
+    }
+
+    .first__text {
+        font-size: 1.5rem;
+    }
+
+    .first__btn {
+        font-size: 1.5rem;
+        padding: .25em 1.5em;
+    }
+
+    .first__wrapper--1 {
+        width: 50%;
+    }
+
+    .first__wrapper--2 {
+        width: 50%;
+        margin-left: 2em;
+        align-self: flex-end;
+    }
+
+    /* Second Section */
+    /* .col + .col {
+        margin-left: 5em;
+    } */
+
+    #second {
+        margin-bottom: 5em;
+        padding-top: 3em;
+        padding-bottom: 5em;
+    }
+
+    .second-gap {
+        margin: 0 2em;
+    }
+
+    /* Third Section */
+    #third {
+        margin-bottom: 2em;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .col {
+        align-self: flex-start;
+        /* width: 70%; */
+        /* margin: 0 2em; */
+    }
+
+    .row__third {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .third__header {
+        margin-top: 0;
+    }
+
+    .col__third-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .third__description--1, .third__description--2, .third__header {
+        text-align: left;
+    }
+
+    /* Footer Section*/
+    .footer__row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2em;
+    }
+
+    .footer__align {
+        text-align: left;
+    }
+
+    .nav__align--footer {
+        margin: 0;
+    }
+}
